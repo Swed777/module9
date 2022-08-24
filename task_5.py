@@ -59,4 +59,22 @@ while True:
   if step_ns_count == 0 or step_ns_count == width_ns or step_ow_count == 0 or step_ow_count == lenght_ow:
     print ('Марсоход уперся')
 
+    '''
+    Версия Никиты - преподавателя
+    
+    room_width, room_height = 15, 20
+x, y = room_width // 2, room_height // 2
+while True:
+    print('Марсоход находится на позиции', x, y, ', введите команду:')
+    command = input('>>>: ').lower()
+    if command == "w" and y < room_height:
+        y += 1
+    elif command == "s" and y > 0:
+        y -= 1
+    elif command == "d" and x < room_width:
+        x += 1
+    elif command == "a" and x > 0:
+        x -= 1
+    '''
+
 

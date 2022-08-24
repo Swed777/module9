@@ -37,3 +37,36 @@ for count, value in enumerate(reversed(word)):
 
 print('\n')
 print('=' * 30)
+
+
+'''
+Версия преподавателя Никиты
+
+word = input('Введите зашифрованное слово: ')
+sum_1, sum_2  = '', ''
+count = 0
+for letter in word:
+    count += 1
+    if count % 2 != 0:
+        sum_1 += letter
+    else:
+        sum_2 = letter + sum_2
+print('Расшифрованное слово: ', sum_1 + sum_2)
+
+'''
+'''
+Версия с сайта https://www.cyberforum.ru/python-tasks/thread2879341.html
+
+a, tmp, res, definitely_not_len = input(), '', '', 0
+ 
+for i in a:
+    definitely_not_len += 1
+ 
+for i in range(definitely_not_len):
+    if not i % 2:
+        res += a[i]
+    else:
+        tmp += a[i]
+ 
+print(res + tmp[::-1])
+'''
